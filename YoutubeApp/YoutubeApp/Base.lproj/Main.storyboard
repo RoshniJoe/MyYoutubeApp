@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BwModelicaSS01-Black.otf">
+            <string>BwModelicaSS01-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Google Sign In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GoogleSignInViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="GoogleSignInViewController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBo-Zv-tHJ" customClass="GIDSignInButton">
+                                <rect key="frame" x="50" y="662" width="314" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="EvV-oC-Z6l"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GcR-g0-Jug">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="612"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GoogleSign" translatesAutoresizingMaskIntoConstraints="NO" id="KgZ-GD-Vtm" customClass="go">
+                                        <rect key="frame" x="169.5" y="192" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="75" id="0DW-8A-auM"/>
+                                            <constraint firstAttribute="width" constant="75" id="ij7-iu-ZQq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to your Youtube App with Google" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPD-XR-o1M">
+                                        <rect key="frame" x="50" y="317" width="314" height="41"/>
+                                        <fontDescription key="fontDescription" name="BwModelicaSS01-Black" family="Bw Modelica SS01" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.21960784310000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KgZ-GD-Vtm" firstAttribute="centerY" secondItem="GcR-g0-Jug" secondAttribute="centerY" multiplier="3:4" id="1fd-GX-y3M"/>
+                                    <constraint firstItem="gPD-XR-o1M" firstAttribute="top" secondItem="KgZ-GD-Vtm" secondAttribute="bottom" constant="50" id="5K4-Fp-8Sd"/>
+                                    <constraint firstItem="gPD-XR-o1M" firstAttribute="leading" secondItem="GcR-g0-Jug" secondAttribute="leading" constant="50" id="hhl-jM-fSy"/>
+                                    <constraint firstItem="KgZ-GD-Vtm" firstAttribute="centerX" secondItem="GcR-g0-Jug" secondAttribute="centerX" id="lMM-Jg-a6G"/>
+                                    <constraint firstAttribute="trailing" secondItem="gPD-XR-o1M" secondAttribute="trailing" constant="50" id="zQm-ZC-6mB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.1215686275" green="0.3294117647" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eBo-Zv-tHJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="JiA-2W-mo5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eBo-Zv-tHJ" secondAttribute="bottom" constant="50" id="KST-Od-R9Z"/>
+                            <constraint firstItem="eBo-Zv-tHJ" firstAttribute="top" secondItem="GcR-g0-Jug" secondAttribute="bottom" constant="50" id="Kf5-Gs-Evh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GcR-g0-Jug" secondAttribute="trailing" id="PIZ-IA-xjf"/>
+                            <constraint firstItem="GcR-g0-Jug" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VmN-RC-jol"/>
+                            <constraint firstItem="GcR-g0-Jug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WAd-cG-Uhe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eBo-Zv-tHJ" secondAttribute="trailing" constant="50" id="eY9-Bf-PKK"/>
+                            <constraint firstItem="eBo-Zv-tHJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rNk-VX-uUY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="eBo-Zv-tHJ" id="plB-Ek-bML"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="72"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="XuZ-Zq-tp2">
+            <objects>
+                <viewController storyboardIdentifier="YTPlayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HEF-l6-eBx" customClass="YTPlayerViewController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BAk-d9-Ohf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8J1-lJ-nVN" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="320" width="414" height="256"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8NR-rn-NEs"/>
+                        <color key="backgroundColor" red="0.066666666669999999" green="0.21960784310000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8NR-rn-NEs" firstAttribute="trailing" secondItem="8J1-lJ-nVN" secondAttribute="trailing" id="0nC-2k-xTw"/>
+                            <constraint firstItem="8J1-lJ-nVN" firstAttribute="leading" secondItem="8NR-rn-NEs" secondAttribute="leading" id="aFV-Tp-xoY"/>
+                            <constraint firstItem="8J1-lJ-nVN" firstAttribute="height" secondItem="BAk-d9-Ohf" secondAttribute="height" multiplier="2:7" id="ddX-Mh-nee"/>
+                            <constraint firstItem="8J1-lJ-nVN" firstAttribute="centerY" secondItem="BAk-d9-Ohf" secondAttribute="centerY" id="i8n-o1-E39"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="8J1-lJ-nVN" id="1OI-tM-HLf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJ2-gE-4ye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.7971014492755" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GoogleSign" width="400" height="400"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
